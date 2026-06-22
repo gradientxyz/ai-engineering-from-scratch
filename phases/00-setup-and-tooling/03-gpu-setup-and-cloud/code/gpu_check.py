@@ -26,7 +26,7 @@ def check_gpu():
     print(f"Compute capability: {props.major}.{props.minor}")
 
     print("\n=== CPU vs GPU Benchmark ===\n")
-    size = 4000
+    size = 15000
 
     a = torch.randn(size, size)
     b = torch.randn(size, size)
