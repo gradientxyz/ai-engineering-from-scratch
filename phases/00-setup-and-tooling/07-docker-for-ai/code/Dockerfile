@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.4.1-devel-ubuntu22.04
+FROM nvidia/cuda:12.8.1-devel-ubuntu24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
@@ -21,7 +21,7 @@ RUN python -m pip install --no-cache-dir \
     torch==2.3.1 \
     torchvision==0.18.1 \
     torchaudio==2.3.1 \
-    --index-url https://download.pytorch.org/whl/cu124
+    --index-url https://download.pytorch.org/whl/cu128
 
 RUN python -m pip install --no-cache-dir \
     numpy \
